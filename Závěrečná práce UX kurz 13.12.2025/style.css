@@ -1,44 +1,44 @@
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            color: #2C3E50;
-            font-size: 18px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .container {
-            max-width: 2400px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #2C3E50;
+    font-size: 18px;
+}
 
-        header {
-            background: #F9FAFB;
-            padding: 20px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+.container {
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+header {
+    background: #F9FAFB;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-        .logo {
-            display: flex;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: #2C3E50;
-        }
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        /* Skrytí header-right na desktopu */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+/* Skrytí header-right na desktopu */
 .header-right {
     display: none;
 }
@@ -125,8 +125,6 @@ html {
 .hero-text {
     position: relative;
     z-index: 10;
-    margin-left: -270px;
-
 }
 
 .hero-text h1 {
@@ -150,7 +148,6 @@ html {
     margin-bottom: 0px;
     font-size: 21.6px;
     margin-left: 100px;
-    line-height: 0.6;
 
 }
     
@@ -206,7 +203,6 @@ html {
 
         .about p {
             margin-bottom: 0px;
-            line-height: 0.6;
         }
 
         .about-image img {
@@ -252,7 +248,6 @@ html {
     border-radius: 6px;
     padding: 0px;
     width: 100%;
-    height: 70%;
     padding-top: 0px;
     display: flex;
     flex-direction: column;
@@ -384,17 +379,14 @@ html {
 
         .instagram h3 {
             color: #2C3E50;
-            margin-bottom: -30px;
             font-size: 31.1px;
             line-height: 1.2;
             font-weight: normal;
-            margin-top: -20px;
         }
 
         .instagram h2 {
             font-size: 44.79px;
             color: #2C3E50;
-            margin-bottom: -10px;
             font-weight: normal;
         }
 
@@ -443,13 +435,18 @@ html {
             
         }
 
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         .footer-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 740px;
-             max-width: 1800px;
+            display: flex;
+            max-width: 1800px;
             margin: 0 auto;
             margin-left: 60px;
+            justify-content: space-between;
         }
 
         .footer-contact h3 {
@@ -551,9 +548,14 @@ html {
 @media (max-width: 768px) {
     /* Layout */
     .hero-content {
-        grid-template-columns: 2.5fr 1fr;
+        grid-template-columns: 1fr;
         gap: 0 px;
         align-items: start;
+    }
+    .hero-text {
+        grid-row: 2;
+        margin-left: -16px;
+        margin-top: -125px;
     }
     .about-content,
     .features-grid,
@@ -589,14 +591,10 @@ html {
     
         }
 
-    .hero-text {
-        display: contents;
-        
-    }
     
     .hero-text p {
 
-    margin-left: 0;
+    margin-left: 0px;
     font-size: 15px;
     margin-top: 10px;
     line-height: 1.2;
@@ -609,9 +607,8 @@ html {
       grid-column: 2;
       grid-row: 1;
         font-size: 15px;
-        margin-top: 10px;
         margin-bottom: 10px;
-        margin-left: -65px;
+        margin-left: 0px;
         z-index: 10;
         position: relative;
     }
@@ -773,6 +770,7 @@ html {
         text-align: center;  /* Vycentruje vše */
         gap: 30px;
         margin-left: 0;  /* Odstraní levý margin */
+        flex-direction: column;
     }
     
     .footer-contact h3 {
