@@ -105,6 +105,7 @@ html {
            gap: 0px;
            align-items: center;
            position: relative;
+          
            
         }
 
@@ -118,13 +119,14 @@ html {
               max-width: 500px;
               object-fit: cover;
               border-radius: 6px;box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-              margin-left: 50%;
+              margin-left: 30%;
         }
 
 
 .hero-text {
     position: relative;
     z-index: 10;
+    margin-left: -20%;
 }
 
 .hero-text h1 {
@@ -162,7 +164,8 @@ html {
      background: #F9FAFB;
      padding: 40px 0 82px 0;
      text-align: center;
-     margin-top: -10px;
+     margin-top: -40px;
+    line-height: 2;
     
      
 }
@@ -173,7 +176,6 @@ html {
             font-weight: 500;
             display: inline-block;
             font-size: 18px;
-            margin-top: 30px;
             
 
            
@@ -219,11 +221,16 @@ html {
         
 
         .features {
-            padding: 80px 0;
+            padding: 80px 20px;
             display: flex;
             align-items: center;
             padding-top: 0px;
             margin-top: 30px;
+            max-width: 1200px;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
 
         
 }
@@ -232,25 +239,29 @@ html {
 .features-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 4%;
     margin-top: 10px;
     align-items: stretch;
+    width: 100%;
+    max-width: none;
+    margin: 0;
 }
 
 
 .feature-column h3 {
-    font-size: 44.79px;
+    font-size: 32px;
     margin-bottom: 20px;
+    margin-top: 40px;
     color: #2C3E50;
-    text-align: center;
+    text-align: left;
     font-weight: normal;
-    
+    width: 100%;
+
 }
 
 .feature-box {
-    border: 2px solid #3BB273;
     border-radius: 6px;
-    width: 90%;
+    width: 100%;
     padding-top: 0px;
     display: flex;
     flex-direction: column;
@@ -264,7 +275,8 @@ html {
        
         .feature-box ul {
     list-style: disc;
-    padding-left: 40px;
+    padding-left: 20px;
+    margin-left: 0;
     margin-bottom: 0;
     color: #2C3E50;
     font-size: 21.6px;
@@ -320,16 +332,13 @@ html {
     }
 
     .app-text p {
-    margin-bottom: 5px;
-    line-height: 0.8;        
+        margin-top: 20px;
+    line-height: 1.4;        
 }
 .app-text p.app-description {
     line-height: 1.4;        /* Jen pro tento konkrétní <p> */
     margin-top: 15px;        /* Volitelně: větší mezera nahoře */
-}
-.app-text h3 {
-    font-size: 31.1px;
-   font-weight: normal;
+
 }
 
         .app-text h2 {
@@ -383,22 +392,18 @@ html {
             
         }
 
-        .instagram h3 {
-            color: #2C3E50;
-            font-size: 31.1px;
-            line-height: 1.2;
-            font-weight: normal;
-        }
+       
 
         .instagram h2 {
             font-size: 44.79px;
             color: #2C3E50;
             font-weight: normal;
+            margin-bottom: 30px;
         }
 
     
         .instagram p {
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             color: #2C3E50;
             font-size: 18px;
         }
@@ -445,6 +450,7 @@ html {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            margin-bottom: 20px;
         }
 
         .footer-content {
@@ -462,7 +468,7 @@ html {
         }
 
         .contact-info {
-            margin-bottom: 10px;
+            margin-bottom: 0px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
            transition: all 0.3s ease;              /* Plynulá animace */
 }
@@ -483,7 +489,7 @@ html {
         .footer-right h2 {
             font-size: 44.73px;
             margin-bottom: 10px;
-            line-height: 1.2;
+            line-height: 1.6;
         }
 
         .copyright {
