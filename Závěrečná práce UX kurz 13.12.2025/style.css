@@ -643,7 +643,8 @@ html {
 
 .cta-section p {
     font-size: 16px;
-    margin-top: -10px;
+    line-height: 1.2;
+    margin-top: 20px;
 }
 
    /* CTA sekce pro mobil */
@@ -686,7 +687,7 @@ html {
     }
     
     .features .container {
-        padding: 0 40px;  
+        padding: 0 20px;  
         margin: 0;
     
     }
@@ -699,13 +700,13 @@ html {
     .feature-column {
         margin: 0 auto 40px;  /* Vycentruje každý sloupec */
         max-width: 100%;
-        width: calc(100% - 40px);  /* 100% mínus padding */
+        width: 100%
     }
     
     .feature-box {
         text-align: left;  /* Text uvnitř vlevo */
         margin: 0 auto;
-        width: 90%;
+        width: 95%;
        padding: 5px 15px;
     }
     
@@ -717,7 +718,7 @@ html {
  .feature-box ul {
         font-size: 16px;  /* ZMĚNA z 16px - text v seznamu */
         line-height: 1.5;  /* Přidáno řádkování */
-        padding-left: 30px;
+        padding-left: 25px;
         margin: 0;
     }
     
